@@ -1,9 +1,6 @@
-Here's the formatted **README.md** content:  
 
-```md
 # Backend Setup  
 
-```bash
 node App.js
 ```
 ![API Running](https://github.com/user-attachments/assets/9d7c713d-245e-4b29-bedb-b7815ec6373b)  
