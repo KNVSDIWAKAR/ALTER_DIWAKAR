@@ -1,7 +1,7 @@
 ```md
 # Backend Setup  
 
-```bash
+```
 node App.js
 ```
 ![Backend Running](https://github.com/user-attachments/assets/ec5ecd35-5a90-4d92-afb9-ffc62ff9487d)  
