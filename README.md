@@ -48,9 +48,11 @@ http://localhost:5000/api/auth/google
 **Invalid Because Of Revoked API ID**
 ![image](https://github.com/user-attachments/assets/bc7b6ce7-066f-4c22-9d5e-ce6f613075c9)
 
-New User 
-"appName":"Alter2"
-"apiKey": "4a3327d30a02c8d9d7f3bd73074c6675bdc21e4076e47ed84b93e881bf1e0633"
+## New User  
+
+appName: Alter2  
+apiKey: 4a3327d30a02c8d9d7f3bd73074c6675bdc21e4076e47ed84b93e881bf1e0633  
+
 
 ![image](https://github.com/user-attachments/assets/8d28d07b-ee49-4d99-8c13-15627967a6d6)
 
