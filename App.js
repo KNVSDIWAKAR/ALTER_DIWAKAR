@@ -19,16 +19,17 @@ const limiter = rateLimit({
 app.use(limiter);
 
 const redisClient = redis.createClient({
-  socket: {
-    host: "127.0.0.1",
-    port: 6379,
-  },
+  url: process.env.REDIS_URL,
 });
 
-redisClient
-  .connect()
-  .then(() => console.log("Redis Connected Successfully"))
-  .catch((err) => console.error("Redis Connection Error:", err));
+redisClient.on("connect", () =>
+  console.log("Connected to Redis successfully!")
+);
+redisClient.on("error", (err) => console.error("Redis Error:", err));
+
+redisClient.connect();
+
+module.exports = redisClient;
 
 const db = mysql.createPool({
   host: process.env.DB_HOST,
@@ -69,9 +70,12 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+app.get("/", (req, res) => {
+  res.send("API Running ");
+});
 
-db.query("SELECT 1 + 2 AS three")
-  .then(([rows]) => console.log("Test Query Result:", rows))
-  .catch((err) => console.error("MySQL Test Query Error:", err));
+// db.query("SELECT 1 + 2 AS three")
+//   .then(([rows]) => console.log("Test Query Result:", rows))
+//   .catch((err) => console.error("MySQL Test Query Error:", err));
 
 module.exports = { db, redisClient };
