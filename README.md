@@ -18,6 +18,7 @@ node App.js
 - **Postman**  
 
 **User Registration**  
+-
 ![image](https://github.com/user-attachments/assets/4c523f24-8d9e-4797-aafb-ac5c776812e6)
 
 **Getting API Key**
