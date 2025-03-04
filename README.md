@@ -16,4 +16,14 @@ node App.js
 - **MySQL (Avien)**  
 - **Redis**  
 - **Postman**  
+
+**User Registration**  
+![image](https://github.com/user-attachments/assets/4c523f24-8d9e-4797-aafb-ac5c776812e6)
+
+**Getting API Key**
+![image](https://github.com/user-attachments/assets/6b532f00-4300-4f01-8526-952f69a049ad)
+
+
+
+
 ```
